@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#2E0249"
+    android:layout_margin="6dp"
+    app:cardCornerRadius="25dp">
+
+    <RelativeLayout
+        android:id="@+id/llcontent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#A91079"
+        android:layout_margin="0dp">
+
+        <TextView
+            android:id="@+id/bookName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/firstimage"
+            android:padding="10dp"
+            android:textColor="#ffffff"
+            android:text="List item"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bookName"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/firstimage"
+            android:padding="10dp"
+            android:text="List item"
+            android:textColor="#ffffff"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/author"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/firstimage"
+            android:padding="10dp"
+            android:text="List item"
+            android:textColor="#ffffff"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:id="@+id/firstimage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            app:cardCornerRadius="25dp"
+            android:src="@drawable/ic_launcher_background" />
+
+        <RatingBar
+            android:id="@+id/rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/firstimage"
+            android:layout_marginTop="15dp"
+            android:numStars="5"
+            android:saveEnabled="true" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
